@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project default="run" name="Allan Sumatra ANT Proj - compile and run JAVA class">
+	<target name="run" depends="compile">
+		<java classname="com.allan.code.Demo">
+				<classpath path="staging"/>
+		</java>
+	</target>
+	<target name="compile">
+		<javac  includeantruntime="false" srcdir="./src" destdir="staging"/>
+	</target>
+</project>
